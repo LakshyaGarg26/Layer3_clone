@@ -74,3 +74,46 @@ export const trendingItems = [
     image: '/assets/image6.png',
   },
 ];
+
+export const streaksItems = [
+  {
+    title: 'Swap via XSwap',
+    frequency: 'Daily',
+    image: 'https://l3img.b-cdn.net/ipfs/Qmf8gfCwcWrYkwBkDwwF55ovDN98D5am3yg9rMsTwgBtRg?width=450&optimizer=image',
+    platform: 'XSwap',
+  },
+  {
+    title: 'Borrow on Alchemix',
+    frequency: 'Weekly',
+    image: 'https://l3img.b-cdn.net/ipfs/QmWcWeuFcpeKdb57ibk55bdSVqXDwLGGTJ6vnZe4aF4vw9?width=450&optimizer=image',
+    platform: 'Alchemix',
+  },
+  {
+    title: 'Lend on Metis',
+    frequency: 'Weekly',
+    image: 'https://l3img.b-cdn.net/ipfs/QmYHQvX8Kr1o2fjAjijTVmPt1EcqKEEn9YdoXGS8asLugB?width=450&optimizer=image',
+    platform: 'Metis',
+  },
+
+  // {
+  //   title: 'Cross-chain Swap on Rubic',
+  //   frequency: 'Weekly',
+  //   image: 'https://l3img.b-cdn.net/ipfs/QmfZA39iiZo2GShX5xnoY4K19awAnrwFhksvkb8gtcxxWB?width=450&optimizer=image',
+  //   platform: 'Rubic',
+  // },
+
+  // {
+  //   title: 'Swap on Celo',
+  //   frequency: 'Daily',
+  //   image: 'https://l3img.b-cdn.net/ipfs/QmckrvJ6Lqrk3wD2biCBp1N3zyazCdTH5yjviNYa1roAcd?width=450&optimizer=image',
+  //   platform: 'Celo',
+  // },
+
+  // {
+  //   title: 'Deposit on Alchemix',
+  //   frequency: 'Weekly',
+  //   image: 'https://l3img.b-cdn.net/ipfs/QmYYaPYPLuqdoqV1iwVksUCiN2VqDBstVetj82NhFvdsGh?width=450&optimizer=image',
+  //   platform: 'Alchemix',
+  // },
+  // Add more items as needed
+];

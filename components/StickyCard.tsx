@@ -6,8 +6,9 @@ import { faBolt, faTrophy, faUserFriends } from '@fortawesome/free-solid-svg-ico
 
 export default function StickyCard() {
   return (
-    <div className="sticky top-20 bg-foreground p-6 rounded-lg shadow-lg h-[calc(90vh-140px)] mr-4">
-      <h2 className="text-xl font-bold text-white mb-4">Explore, earn and trade in one place</h2>
+    <div className="sticky top-20 bg-foreground p-6 rounded-lg shadow-lg h-[calc(106vh-140px)] w-96 mr-4">
+      <img src={'https://app.layer3.xyz/images/profiles.png'} alt={'layer3'} className="rounded-lg w-full mb-4" />
+      <h2 className="text-2xl font-bold text-white mb-4">Explore, earn and trade in one place</h2>
       <p className="text-gray-400 mb-4">Earn tokens, level-up and build your omnichain identity</p>
       <ul className="mb-4 space-y-4">
         <li className="flex items-center bg-foregroundPts p-3 rounded-md">

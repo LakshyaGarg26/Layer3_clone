@@ -18,7 +18,7 @@ export default function FeaturedCarousel() {
   return (
     <div className="relative mb-8">
       <h2 className="text-2xl font-bold mb-4">Featured</h2>
-      <div className="flex items-center space-x-4 bg-secondary p-6 rounded-lg relative">
+      <div className="flex items-center space-x-4 bg-foreground p-6 rounded-lg relative">
         <div className="flex-1">
           <h3 className="text-xl font-bold mb-2">{featuredQuests[currentIndex].title}</h3>
           <p className="text-textSecondary mb-4">{featuredQuests[currentIndex].description}</p>
@@ -30,8 +30,10 @@ export default function FeaturedCarousel() {
             Begin
           </button>
         </div>
-        <div className="flex-1">
-          <img src={featuredQuests[currentIndex].image} alt={featuredQuests[currentIndex].title} className="rounded-lg" />
+        <div className="flex-1 flex items-center justify-center">
+          <div className="ml-20"> {/* Added ml-4 to shift the image */}
+            <img src={featuredQuests[currentIndex].image} alt={featuredQuests[currentIndex].title} className="rounded-lg object-cover h-full w-full max-h-96 max-w-96" />
+          </div>
         </div>
         <div className="absolute -top-7 right-4 mr-4 flex space-x-2">
           {featuredQuests.map((_, index) => (

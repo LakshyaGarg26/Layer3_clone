@@ -12,14 +12,14 @@ const streaksItems = [
     platformImage: 'https://l3img.b-cdn.net/ipfs/QmUopFdvdr4RFPuczQbxqNKph7LqWA7pg5Aix3vGSc7BNX?width=72&optimizer=image' 
   },
   { 
-    title: 'Superchain Evolution: Compound', 
+    title: 'Superchain Evolution: Co...', 
     participants: '8K', 
     image: 'https://l3img.b-cdn.net/ipfs/QmNUrMGVrLLyTtPKEWVgSMY8cXYBrNah4D74uCpPxUNJAi?width=450&optimizer=image', 
     platform: 'Compound', 
     platformImage: 'https://l3img.b-cdn.net/ipfs/QmUopFdvdr4RFPuczQbxqNKph7LqWA7pg5Aix3vGSc7BNX?width=72&optimizer=image' 
   },
   { 
-    title: 'Superchain Evolution: Kelp DAO', 
+    title: 'Superchain Evolution: Kelp...', 
     participants: '5.4K', 
     image: 'https://l3img.b-cdn.net/ipfs/QmNUrMGVrLLyTtPKEWVgSMY8cXYBrNah4D74uCpPxUNJAi?width=450&optimizer=image', 
     platform: 'KelpDAO', 

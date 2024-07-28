@@ -7,6 +7,7 @@ import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 
 export default function LanguageDropdown() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const languages = ['English', 'Spanish', 'French', 'German', 'Chinese', 'Japanese', 'Russian', 'Italian'];
 
@@ -17,8 +18,16 @@ export default function LanguageDropdown() {
   };
 
   useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth < 768);
+    };
+
+    handleResize(); // Check screen size on component mount
+    window.addEventListener('resize', handleResize);
+
     document.addEventListener('mousedown', handleClickOutside);
     return () => {
+      window.removeEventListener('resize', handleResize);
       document.removeEventListener('mousedown', handleClickOutside);
     };
   }, []);
@@ -29,10 +38,12 @@ export default function LanguageDropdown() {
         onClick={() => setIsOpen(!isOpen)}
         className="flex items-center space-x-2 text-textSecondary focus:outline-none"
       >
-        <FontAwesomeIcon icon={faGlobe} className="w-6 h-6 text-textSecondary" />
+        <FontAwesomeIcon icon={faGlobe} className="w-5 h-5 text-white hover:text-textSecondary" />
       </button>
       {isOpen && (
-        <div className="absolute right-0 mt-2 w-48 bg-foreground rounded-lg shadow-2xl z-50">
+        <div
+          className={`absolute ${isSmallScreen ? 'left-0 mt-2' : 'right-0 mt-4'} w-48 bg-foreground rounded-lg shadow-2xl z-50`}
+        >
           <ul className="py-2">
             {languages.map((language, index) => (
               <li
